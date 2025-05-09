@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Destyny Valor </title>
+    <!-- Incluir o favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- CSS do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- CSS personalizado-->
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <header>
+
+        <!-- Inserindo a navbar -->
+        <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
+            <div class="container ">
+                <!-- marca da loja -->
+                <a class="navbar-brand" href="index.html">Destyny Valor</a>
+                <div id="navbar-items">
+                    <!-- insere a div para limitar o espaço -->
+                    <div></div>
+                    <!-- formulario com display flex -->
+                    <form class="d-flex" id="search-form">
+                        <!-- ícone da lupa -->
+                        <i class="bi bi-search primary-color"></i>
+                        <input class="form-control me-2" type="search" placeholder="Encontre o seu produto"
+                            aria-label="Search">
+                        <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <!-- HEADER PARA USUÁRIO LOGADO -->
+                        <!-- <li class="nav-item">
+              <a href="profile.html" class="nav-link bold"><i class="bi bi-person-circle"></i>
+                %NOME_DE_USUARIO%
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="editprofile.html" class="nav-link bold"><i class="bi bi-pencil"></i>
+                Editar
+              </a>
+            </li> -->
+
+                        <!-- BOTÃO PARA TELA DE ADMIN COLOCAR PRODUTOS NOVOS NO CARRINHO -->
+                        <!-- <li class="nav-item">
+                <a href="addproducts.html" class="nav-link bold"><i class="bi bi-bag-plus"></i>
+                  newprod
+                </a>
+              </li> -->
+
+                        <!-- <li class="nav-item">
+              <a href="carrinho.html" class="nav-link bold"><i class="bi bi-cart"></i>
+                Carrinho
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="logout.html" class="nav-link"><i class="bi bi-door-open"></i> Sair</a>
+            </li> -->
+                        <!-- FIM DO HEADER PARA USUÁRIO LOGADO -->
+
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link"><i class="bi bi-person-plus"></i> Cadastrar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link"> <i class="bi bi-person"></i> Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Segunda navbar -->
+
+        <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+            <div class="container ">
+                <!-- menu hamburguer em mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar"
+                    aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#best-sellers">
+                            Mais vendidos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#bottom-banner">
+                            Promoções
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#products">
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIM NAVBAR -->
+    </header>
+
+    <link rel="stylesheet" href="css/prostyle.css">
+
+    <!-- CONTAINER GERAL DA PÁGINA -->
+    <main>
+        <section id="container_primario">
+            <!-- PRIMEIRA SECTION COM OS ANGULOS DO PRODUTO -->
+            <section id="coluna_side">
+
+                <!-- DIVS COM IMAGENS -->
+                <div class="div_side">
+                    <img src="img/products/produto (3).png" alt="" class="img_side">
+                </div>
+                <div class="div_side">
+                    <label for=""><img src="img/products/produto (3).png" alt="" class="img_side"></label>
+                </div>
+                <div class="div_side">
+                    <label for=""><img src="img/products/produto (3).png" alt="" class="img_side"></label>
+                </div>
+            </section>
+            <!-- SECTION COM A IMAGEM PRINCIPAL DO PRODUTO -->
+            <section class="principal">
+                <div class="div_img_principal">
+                    <img src="img/products/produto (3).png" alt="" id="img_principal">
+                </div>
+
+            </section>
+
+            <!-- SECTION COM INFORMAÇÕES DO PRODUTO E BOTÕES DE FINALIZAÇÃO -->
+            <section class="texto">
+
+                <!-- INFORMAÇÕES -->
+                <p class="nome_produto">
+                    %NOME%<br>
+                </p>
+                <!-- DESCONTO -->
+                <p class="desconto">
+                    30% desconto
+                </p>
+
+                <!-- PREÇO -->
+                <p class="preco">
+                    R$
+                    %PRECO%
+                </p>
+                <!-- PARCELAS POSSIVEIS PARA O PRODUTO (O BOOTSTRAP NAO ESTA FUNCIONANDO)-->
+                <p class="sem_juros">
+                    Até 8x sem juros
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Parcelamento
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">2x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">3x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">4x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">5x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">6x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">7x SEM JUROS</a></li>
+                        <li><a class="dropdown-item" href="#">8x SEM JUROS</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                </p>
+
+                <br><br>
+                <!-- CEP -->
+                <div class="cep_enviar">
+                    <div class="texto_cep">
+                        Calcular frete e entrega
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-danger" type="button" id="button-addon1">CEP<button>
+                                    <input type="text" class="form-control" placeholder=""
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </div>
+                    <!-- ENVIAR -->
+                    <div>
+                        <a id="enviar" class="btn btn-outline-danger" style="width:250px;"
+                            href="carrinho.html?prod=%ID%">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <br><br>
+
+        <!-- DIVISÃO DE TELA -->
+        <div>
+            %DESCRICAO%
+
+        </div>
+        <hr class="meia_tela">
+        <br><br><br>
+
+
+        <!-- TITULO SECUNDÁRIO -->
+        <p id="titulo_secundario">Você também pode gostar</p>
+
+        <!-- SECTION CONTAINER -->
+        <section class="secundaria">
+            <!--  2 -->
+            <div class="produto">
+                <img src="img/products/produto (3).png" alt="">
+                <br>
+                <p>
+                    %NOME%
+                </p>
+
+                <br>
+
+                <p class="preco_secundario">R$
+                    %PRECO%
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+    <!-- Imagens das Redes Sociais -->
+    <div class="container-fluid" id="gallery">
+        <!-- Container de largura total para a galeria de imagens -->
+        <div class="row">
+            <!-- Linha que contém seis colunas para as imagens -->
+            <div class="col-6 col-md-2 image-container" id="insta1">
+                <!-- Coluna para a imagem 1 -->
+            </div>
+            <div class="col-6 col-md-2 image-container" id="insta2">
+                <!-- Coluna para a imagem 2 -->
+            </div>
+            <div class="col-6 col-md-2 image-container" id="insta3">
+                <!-- Coluna para a imagem 3 -->
+            </div>
+            <div class="col-6 col-md-2 image-container" id="insta4">
+                <!-- Coluna para a imagem 4 -->
+            </div>
+            <div class="col-6 col-md-2 image-container" id="insta5">
+                <!-- Coluna para a imagem 5 -->
+            </div>
+            <div class="col-6 col-md-2 image-container" id="insta6">
+                <!-- Coluna para a imagem 6 -->
+            </div>
+        </div>
+    </div>
+    <!-- Seção do rodapé -->
+
+    <div class="container-fluid" id="footer-links-container">
+        <!-- Container para os links do rodapé -->
+        <div class="row">
+            <!-- Linha que contém três colunas de links -->
+            <div class="col-12 col-md-4 footer-column">
+                <!-- Coluna para os links de páginas -->
+                <h3>Páginas</h3>
+                <!-- Título da seção de links -->
+                <ul class="list-unstyled">
+                    <!-- Lista não ordenada de links -->
+                    <li class="mb-2"><a href="index.html" class="secondary-color">Home</a></li>
+                    <li class="mb-2"><a href="#" class="secondary-color">Categorias</a></li>
+                    <li class="mb-2"><a href="#" class="secondary-color">Promoções</a></li>
+                    <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Coluna central para informações da loja -->
+            <div class="col-12 col-md-4 footer-column" id="footer-center">
+                <h3>Destyny Valor</h3>
+                <p class="secondary-color">Alguma dúvida? Ligue para nós</p>
+                <p class="store-phone"><i class="bi bi-telephone"></i> (11)99999-9999</p>
+            </div>
+            <!-- Coluna para os links de informações adicionais -->
+            <div class="col-12 col-md-4 footer-column">
+                <h3>Informações</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="secondary-color">Política de Privacidade</a></li>
+                    <li class="mb-2"><a href="#" class="secondary-color">Política de Entrega</a></li>
+                    <li class="mb-2"><a href="#" class="secondary-color">Rastreie seu pedido</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Seção de inscrição na newsletter e ícones de redes sociais -->
+    <div class="container-fluid" id="newsletter-container">
+        <div class="col-12">
+            <div class="row">
+                <p class="secondary-color">Se inscreva na nossa Newsletter:</p>
+                <form class="d-flex" id="news-form">
+                    <i class="bi bi-envelope primary-color"></i>
+                    <input class="form-control me-2" placeholder="Insira seu e-mail">
+                    <button class="btn secondary-bg-color" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-12" id="social-container">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-twitter"></i>
+        </div>
+    </div>
+    <!-- Seção com informações de direitos autorais -->
+    <div class="container" id="copy-container">
+        <p>Todos os direitos reservados @2023 <span class="primary-color">Destyny Valor</span> - Os melhores relógios
+        </p>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.js"
+    integrity="sha512-KCgUnRzizZDFYoNEYmnqlo0PRE6rQkek9dE/oyIiCExStQ72O7GwIFfmPdkzk4OvZ/sbHKSLVeR4Gl3s7s679g=="
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
